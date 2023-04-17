@@ -15,8 +15,6 @@ jobs:
     - uses: actions/checkout@master
     - name: Setup Python
       uses: actions/setup-python@master
-      with:
-        python-version: $(cat .python-version)
     - name: Install dependencies
       run: |
         pip install poetry
