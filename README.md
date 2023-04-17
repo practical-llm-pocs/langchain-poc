@@ -11,6 +11,10 @@
 - (Optional) pyenv (https://github.com/pyenv/pyenv#getting-pyenv)
 - Python >=3.8 (`pyenv install`)
 - poetry (`pip install poetry`)
+- Python packages (`poetry install`)
+- Dependencies for custom tool curl_rss_tool (+ html2text + sumy)
+  - html2text (`sudo apt install html2text`)
+  - nltk data (`poetry run python -m nltk.downloader all`)
 
 ## Env
 
