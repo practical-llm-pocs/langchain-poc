@@ -28,7 +28,9 @@ __pycache__
 *.pyc
 
 # Tests
+.coverage
 htmlcov/
+coverage.xml
 
 # Tmp
 /tmp
