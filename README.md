@@ -1,4 +1,4 @@
-![Pipeline Status](https://github.com/practical-llm-pocs/langchain-poc/workflows/python-app/badge.svg)
+![Pipeline Status](https://github.com/practical-llm-pocs/langchain-poc/actions/workflows/python-app.yml/badge.svg)
 [![Coverage Status](https://codecov.io/gh/practical-llm-pocs/langchain-poc/branch/main/graph/badge.svg)](https://codecov.io/gh/practical-llm-pocs/langchain-poc)
 
 
