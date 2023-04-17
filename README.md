@@ -12,6 +12,14 @@
 - Python >=3.8 (`pyenv install`)
 - poetry (`pip install poetry`)
 
+## Env
+
+Create a .env.local file, then update with your API keys.
+
+```bash
+cp .env.example .env.local
+```
+
 
 # Development
 

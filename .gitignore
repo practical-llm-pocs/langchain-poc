@@ -22,7 +22,10 @@ var/
 # IDE
 .idea
 
-# Env / cache
+# Secrets
+.env.local
+
+# Venv / cache
 .venv
 __pycache__
 *.pyc

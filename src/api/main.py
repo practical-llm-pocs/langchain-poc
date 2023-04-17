@@ -2,9 +2,11 @@ import argparse
 from uvicorn import run
 from fastapi import FastAPI
 from .routes.hello import router as hello_router
+from .routes.chat import router as chat_router
 
 app = FastAPI()
 app.include_router(hello_router, prefix="/hello")
+app.include_router(chat_router, prefix="/chat")
 
 def start(host: str = '127.0.0.1', port: int = 3000, reload: bool = False):
     """Launched with `poetry run start` at root level"""

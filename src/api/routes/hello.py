@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from src.core.main import hello
+from src.core import hello
 
 router = APIRouter()
 
