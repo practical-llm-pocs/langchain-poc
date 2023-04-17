@@ -1,0 +1,42 @@
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Serverless directories
+.serverless
+
+# IDE
+.idea
+
+# Env / cache
+.venv
+__pycache__
+*.pyc
+
+# Tests
+htmlcov/
+
+# Tmp
+/tmp
+/logs
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Vim
+*.swp

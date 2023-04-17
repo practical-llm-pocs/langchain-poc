@@ -1,0 +1,14 @@
+service: langchain-poc
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.9
+
+functions:
+  hello:
+    handler: serverless/handler.hello
+    events:
+      - httpApi:
+          path: /
+          method: get

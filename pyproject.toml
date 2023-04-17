@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "langchain-poc"
+version = "0.1.0"
+description = ""
+authors = ["Scott Yang <yisyang@gmail.com>"]
+readme = "README.md"
+packages = [{include = "src"}, {include = "serverless"}]
+
+[tool.poetry.dependencies]
+python = "~=3.8"
+langchain = "~=0.0"
+openai = "~=0.27"
+fastapi = "~=0.95"
+click = "~=8.1.3"
+
+[tool.poetry.group.dev.dependencies]
+uvicorn = "^0.21.1"
+pytest = "^7.3.1"
+httpx = "^0.24.0"
+pytest-cov = "^4.0.0"
+
+[tool.poetry.scripts]
+start = "src.api.main:main"
+cli = "src.cli.main:cli"
+hello = "src.cli.main:hello"
+test = "pytest:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
