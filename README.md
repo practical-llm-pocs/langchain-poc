@@ -9,7 +9,7 @@
 - Git
 - Git LFS (https://git-lfs.com/)
 - (Optional) pyenv (https://github.com/pyenv/pyenv#getting-pyenv)
-- Python >=3.8 (`pyenv install`)
+- Python >=3.9.16 (`pyenv install`)
 - poetry (`pip install poetry`)
 - Python packages (`poetry install`)
 - Dependencies for custom tool curl_rss_tool (+ html2text + sumy)

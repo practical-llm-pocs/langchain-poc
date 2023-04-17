@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "src"}, {include = "serverless"}]
 
 [tool.poetry.dependencies]
-python = "3.8.6"
+python = "3.9.16"
 langchain = "0.0.141"
 openai = "~=0.27"
 fastapi = "~=0.95"
