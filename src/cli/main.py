@@ -1,6 +1,6 @@
 import click
 from dotenv import load_dotenv, find_dotenv
-from src.core import hello, agent
+from src.core import hello, llama
 
 
 load_dotenv(find_dotenv(".env"), override=True)
@@ -18,11 +18,12 @@ def say_hello(name):
 
 @click.command()
 @click.option("-p", "--prompt", default='What\'s today\'s date?', help="Ask a question.")
-def ask_agent(prompt):
-    click.echo(agent(prompt))
+def ask_llama(prompt):
+    click.echo(llama(prompt))
 
 cli.add_command(say_hello, 'hello')
-cli.add_command(ask_agent, 'agent')
+cli.add_command(ask_llama, 'agent')
+cli.add_command(ask_llama, 'llama')
 
 if __name__ == "__main__":
     cli()
