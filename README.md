@@ -37,13 +37,13 @@ It utilizes FastAPI for the API layer and Click for the CLI layer, with shared f
 
 ### API Examples:
 
-1. Start a ollama server:
+1. Start a ollama server
 
 ```bash
-ollama serve 
+ollama serve
 ```
 
-3. Start the API server:
+2. Start the API server in separate terminal
 
 ```bash
 poetry run start --reload
@@ -58,6 +58,14 @@ curl http://127.0.0.1:3000/hello/Doge
 
 
 ### CLI Examples:
+
+1. Start the ollama server in separate terminal
+
+```bash
+ollama serve
+```
+
+2. Run script from shell
 
 ```bash
 # poetry run hello

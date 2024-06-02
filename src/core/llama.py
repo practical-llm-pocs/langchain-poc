@@ -14,7 +14,7 @@ def llama(prompt):
     model_name = os.environ.get("OLLAMA_MODEL", "llama3")
 
     # First, let's load the language model we're going to use to control the agent.
-    llm = ChatOllama(model="llama3", format="json", temperature=0.7,
+    llm = ChatOllama(model=model_name, format="json", temperature=0.7,
                      base_url="http://localhost:11434")
 
     # Next, let's load some tools to use. Note that the `llm-math` tool uses an LLM, so we need to pass that in.
