@@ -15,6 +15,8 @@
 - Dependencies for custom tool curl_rss_tool (+ html2text + sumy)
   - html2text (`sudo apt install html2text`)
   - nltk data (`poetry run python -m nltk.downloader all`)
+- Ollama
+  - llama3 model, or other models used
 
 ## Env
 
@@ -35,13 +37,19 @@ It utilizes FastAPI for the API layer and Click for the CLI layer, with shared f
 
 ### API Examples:
 
-1. Start the API server:
+1. Start a ollama server:
+
+```bash
+ollama serve 
+```
+
+3. Start the API server:
 
 ```bash
 poetry run start --reload
 ```
 
-2. Access the API endpoints using a web browser, curl, or a REST client:
+3. Access the API endpoints using a web browser, curl, or a REST client:
 
 ```bash
 curl http://127.0.0.1:3000/hello
@@ -57,6 +65,13 @@ Hello World!
 
 # poetry run hello Doge
 Hello Doge!
+```
+
+
+# Testing
+
+```bash
+poetry run test
 ```
 
 

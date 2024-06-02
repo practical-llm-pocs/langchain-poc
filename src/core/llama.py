@@ -1,3 +1,4 @@
+import os
 from langchain import hub
 from langchain.agents import Tool
 from langchain.agents import AgentExecutor, create_json_chat_agent
@@ -9,6 +10,9 @@ from langchain_community.utilities import WikipediaAPIWrapper
 from src.core.tools.curl import curl_rss_tool
 
 def llama(prompt):
+    # Load model name from env var OLLAMA_MODEL
+    model_name = os.environ.get("OLLAMA_MODEL", "llama3")
+
     # First, let's load the language model we're going to use to control the agent.
     llm = ChatOllama(model="llama3", format="json", temperature=0.7,
                      base_url="http://localhost:11434")

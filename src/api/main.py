@@ -1,8 +1,13 @@
 import argparse
 from uvicorn import run
 from fastapi import FastAPI
+from dotenv import load_dotenv, find_dotenv
 from .routes.hello import router as hello_router
 from .routes.chat import router as chat_router
+
+
+load_dotenv(find_dotenv(".env"), override=True)
+load_dotenv(find_dotenv(".env.local"), override=True)
 
 app = FastAPI()
 app.include_router(hello_router, prefix="/hello")
